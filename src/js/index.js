@@ -29,7 +29,7 @@ async function movieTitle(title){
     try{
         let promise=await fetch(`https://www.omdbapi.com/?apikey=a407a7b3&s=${title}`);
         let data=await promise.json();
-        console.log(data.Search);
+        //console.log(data.Search);
         renderMovie(data.Search)
       if(data.Search){
         not.classList.add("d-none");
@@ -49,7 +49,7 @@ catch (error) {
   
   
 finally{
-    console.log("Mission complated");
+   // console.log("Mission complated");
   
     spin.classList.add("d-none")
 }
