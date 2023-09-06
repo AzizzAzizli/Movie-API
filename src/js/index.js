@@ -71,5 +71,5 @@ div.innerHTML=movies.map((movie)=>`<div class="card" style="width: 18rem;">
 <p class="card-text text-secondary fw-medium">Type: ${movie.Type==="N/A"?" Not available in the system":" "+upperCase(movie.Type)}</p>
 <p class="card-text text-secondary fw-medium">Year:${movie.Year==="N/A"?" Not available in the system":" "+movie.Year}</p>
 </div>
-</div>`)
+</div>`).join("")
 }
